@@ -1,0 +1,13 @@
+SELECT
+registration_date,
+first_name,
+last_name,
+no_fam,
+no_children,
+iowa,
+eligibility,
+snap,
+free_lunches
+
+FROM clients
+WHERE client_id = {{selManageClient.selectedOptionValue}};

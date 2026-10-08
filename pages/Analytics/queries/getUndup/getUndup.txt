@@ -1,0 +1,9 @@
+SELECT COUNT(*) AS undup_house, 
+SUM(avg_fam) AS undup_ind
+FROM 
+(SELECT client_id, AVG(no_fam) AS avg_fam
+FROM weekly_log
+WHERE 
+ EXTRACT(MONTH FROM visit_date) = {{inpMonth.value}} AND
+ EXTRACT(YEAR FROM visit_date) = {{inpYear.value}}
+GROUP BY client_id)

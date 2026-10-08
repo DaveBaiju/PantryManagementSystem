@@ -1,0 +1,22 @@
+INSERT INTO clients (
+	registration_date,
+	first_name,
+	last_name,
+	no_fam,
+	no_children,
+	iowa,
+	eligibility,
+	snap,
+	free_lunches
+)
+VALUES (
+	{{dpRegistrationDate.selectedDate}},
+	{{inpFirstName.text}},
+	{{inpLastName.text}},
+	{{inpNoFamily.value}},
+	{{inpNoChildren.value}},
+	{{radIowa.selectedOptionValue === "true"}},
+	{{radEligibility.selectedOptionValue === "true"}},
+	{{radSNAP.selectedOptionValue === "true"}},
+	{{radFreeLunches.selectedOptionValue === "true"}}
+)

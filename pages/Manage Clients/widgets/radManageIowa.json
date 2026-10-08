@@ -1,0 +1,53 @@
+{
+  "accentColor": "#be185d",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 60,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{getManageClientsDetails.data[0]?.iowa === true ? \"true\":\"false\"}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "bq6nn9nd59",
+  "label": "Iowa",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 9,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"true\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"false\"\n  }\n]",
+  "originalBottomRow": 60,
+  "originalTopRow": 54,
+  "parentColumnSpace": 12.90625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 29,
+  "topRow": 54,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "pxtqb0oo1f",
+  "widgetName": "radManageIowa"
+}

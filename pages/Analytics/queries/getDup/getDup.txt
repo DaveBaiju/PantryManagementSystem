@@ -1,0 +1,6 @@
+SELECT COUNT(*) AS dup_house, 
+SUM(no_fam) AS dup_ind
+FROM weekly_log 
+WHERE 
+EXTRACT(MONTH FROM visit_date) = {{inpMonth.value}} AND 
+EXTRACT(YEAR FROM visit_date) = {{inpYear.value}};

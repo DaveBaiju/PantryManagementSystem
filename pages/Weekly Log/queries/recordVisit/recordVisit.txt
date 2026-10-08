@@ -1,0 +1,12 @@
+INSERT INTO public.weekly_log (
+	visit_date,
+	client_id,
+	no_fam,
+	no_children
+)
+VALUES (
+	{{dpVistitDate.selectedDate}},
+	{{selectClient.selectedOptionValue}},
+	{{getSelectedClient.data[0].no_fam}},
+	{{getSelectedClient.data[0].no_children}}
+);

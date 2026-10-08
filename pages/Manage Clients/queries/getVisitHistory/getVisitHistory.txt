@@ -1,0 +1,7 @@
+SELECT
+visit_date,
+no_fam,
+no_children
+FROM weekly_log
+WHERE client_id = {{selManageClient.selectedOptionValue}}
+ORDER BY log_id DESC;

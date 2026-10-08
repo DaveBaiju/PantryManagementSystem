@@ -1,0 +1,9 @@
+SELECT 
+	client_id,
+	first_name,
+	last_name,
+	no_fam,
+	no_children
+FROM clients
+WHERE LOWER(TRIM(first_name)) = LOWER(TRIM({{inpFirstName.text}})) AND LOWER(TRIM(last_name)) = LOWER(TRIM({{inpLastName.text}}))
+ORDER BY client_id;

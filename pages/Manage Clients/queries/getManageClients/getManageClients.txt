@@ -1,0 +1,8 @@
+SELECT
+client_id,
+first_name,
+last_name,
+first_name || ' ' || last_name AS full_name
+
+FROM clients
+ORDER BY last_name,first_name

@@ -1,0 +1,11 @@
+UPDATE clients
+SET 
+	first_name = {{inpManageFirstName.text.trim()}},
+	last_name = {{inpManageLastName.text.trim()}},
+	no_fam = {{inpManageNoFamily.value}},
+	no_children = {{inpManageNoChildren.value}},
+	iowa = {{radManageIowa.selectedOptionValue === "true"}},
+	eligibility = {{radManageEligibility.selectedOptionValue === "true"}},
+	snap = {{radManageSNAP.selectedOptionValue === "true"}},
+	free_lunches = {{radManageFreeLunches.selectedOptionValue === "true"}}
+WHERE client_id = {{selManageClient.selectedOptionValue}};

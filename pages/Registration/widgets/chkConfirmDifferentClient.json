@@ -1,0 +1,49 @@
+{
+  "accentColor": "#be185d",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 76,
+  "defaultCheckedState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{checkExistingClients.data.length > 0}}",
+  "key": "2n97wvi58w",
+  "label": "I have verified this is a different client.",
+  "labelPosition": "Left",
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 89,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 35,
+  "mobileTopRow": 85,
+  "needsErrorInfo": false,
+  "originalBottomRow": 76,
+  "originalTopRow": 72,
+  "parentColumnSpace": 12.90625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 41,
+  "topRow": 72,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "43iou43plk",
+  "widgetName": "chkConfirmDifferentClient"
+}

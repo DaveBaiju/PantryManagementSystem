@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 30,
+  "boxShadow": "none",
+  "buttonColor": "#be185d",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{\n\t!inpFirstName.text.trim() || !inpLastName.text.trim() || !inpNoFamily.value || !inpNoChildren.isValid || inpNoFamily.value <= inpNoChildren.value || radIowa.selectedOptionValue === \"\" || radEligibility.selectedOptionValue === \"\"|| radSNAP.selectedOptionValue === \"\" || radFreeLunches.selectedOptionValue === \"\" || checkExistingClients.data.length > 0 && !chkConfirmDifferentClient.isChecked\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "m5aw5hsmet",
+  "leftColumn": 40,
+  "minWidth": 120,
+  "mobileBottomRow": 53,
+  "mobileLeftColumn": 22,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 49,
+  "needsErrorInfo": false,
+  "onClick": "{{registerClient.run().then(() => {\n  showAlert('Registered Successfully', 'success');\n  resetWidget(\"inpFirstName\", true);\n  resetWidget(\"inpLastName\", true);\n  resetWidget(\"inpNoChildren\", true);\n  resetWidget(\"inpNoFamily\", true);\n  resetWidget(\"radEligibility\", true);\n  resetWidget(\"radFreeLunches\", true);\n  resetWidget(\"radIowa\", true);\n  resetWidget(\"radSNAP\", true);\n  resetWidget(\"chkConfirmDifferentClient\", true);\n});}}",
+  "originalBottomRow": 30,
+  "originalTopRow": 26,
+  "parentColumnSpace": 12.90625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 56,
+  "text": "Register",
+  "topRow": 26,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "fisbwvem7x",
+  "widgetName": "regClient_button"
+}

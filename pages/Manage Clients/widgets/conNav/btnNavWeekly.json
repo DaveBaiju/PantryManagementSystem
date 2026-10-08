@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 6,
+  "boxShadow": "none",
+  "buttonColor": "#be185d",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "oj3ofl9r78",
+  "leftColumn": 3,
+  "minWidth": 120,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onClick": "{{\n\tselManageClient.selectedOptionValue &&\n\t\t(inpManageFirstName.text.trim() !== getManageClientsDetails.data[0]?.first_name || inpManageLastName.text.trim() !== getManageClientsDetails.data[0]?.last_name || inpManageNoFamily.value !== getManageClientsDetails.data[0]?.no_fam || inpManageNoChildren.value !== getManageClientsDetails.data[0]?.no_children || (radManageIowa.selectedOptionValue === \"true\") !== getManageClientsDetails.data[0]?.iowa || (radManageEligibility.selectedOptionValue === \"true\") !== getManageClientsDetails.data[0]?.eligibility || (radManageSNAP.selectedOptionValue === \"true\") !== getManageClientsDetails.data[0]?.snap || (radManageFreeLunches.selectedOptionValue === \"true\") !== getManageClientsDetails.data[0]?.free_lunches)?\n\t\tstoreValue(\"pendingManageDestination\", \"Weekly Log\").then(() => showModal(\"mdlUnsavedChanges\")): navigateTo(\"Weekly Log\")\n}}",
+  "parentColumnSpace": 9.16552734375,
+  "parentId": "713g1qfskx",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 19,
+  "text": "Weekly Log",
+  "topRow": 2,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "soaycahjxu",
+  "widgetName": "btnNavWeekly"
+}

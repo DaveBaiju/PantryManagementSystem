@@ -1,0 +1,53 @@
+{
+  "accentColor": "#be185d",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 67,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{getManageClientsDetails.data[0]?.free_lunches === true ? \"true\":\"false\"}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "bq6nn9nd59",
+  "label": "Free Lunches",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 30,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 48,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 48,
+  "mobileTopRow": 42,
+  "needsErrorInfo": false,
+  "options": "[\n  {\n    \"label\": \"Yes\",\n    \"value\": \"true\"\n  },\n  {\n    \"label\": \"No\",\n    \"value\": \"false\"\n  }\n]",
+  "originalBottomRow": 67,
+  "originalTopRow": 61,
+  "parentColumnSpace": 12.90625,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 50,
+  "topRow": 61,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "cxkeff44yl",
+  "widgetName": "radManageFreeLunches"
+}
